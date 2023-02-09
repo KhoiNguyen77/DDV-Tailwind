@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90% !important;
+}
+
+/* Nav */
+.navBar .left ul li:hover .dropdownMenu {
+    display: inline-block;
+}
+
+.dropdownMenu {
+    top: 46px;
+}
+
+/* Intro */
+.intro_swiper .owl-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro_swiper .owl-dots .owl-dot span {
+    display: inline-block;
+    zoom: 1;
+    border-radius: 10px;
+    width: 15px;
+    height: 3px;
+}
+
+.intro_swiper .owl-dots .active span {
+    background-color: darkred !important;
+}
+
+.intro_swiper .owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.intro_swiper .owl-nav .owl-prev {
+    position: absolute !important;
+    left: 2% !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.459) !important;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.intro_swiper .owl-nav .owl-prev span {
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 77%;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.intro_swiper .owl-nav .owl-next span {
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 77%;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.intro_swiper .owl-nav .owl-next {
+    position: absolute !important;
+    right: 2% !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.459) !important;
+    opacity: 0;
+    transition: all 1s;
+}
+.intro_swiper:hover .owl-prev {
+    opacity: 1;
+}
+.intro_swiper:hover .owl-next {
+    opacity: 1;
+}
+/* Thank you */
+.thankyou_left img {
+    width: 100%;
+}
+.thankyou_right .item p {
+    width: 100%;
+}
+.thankyou_swiper  .owl-nav{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+}
+.thankyou_swiper .owl-nav .owl-next {
+    position: absolute !important;
+    right: 2% !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 1s;
+}
+.thankyou_swiper .owl-nav .owl-next span {
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 77%;
+    width: 30px;
+    height: 30px;
+    color: black;
+    border: 1px solid black;
+}
+.thankyou_swiper .owl-nav .owl-prev span {
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 77%;
+    width: 30px;
+    height: 30px;
+    color: black;
+    border: 1px solid black;
+}
+.thankyou_swiper .owl-nav .owl-prev {
+    position: absolute !important;
+    left: 2% !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.thankyou_swiper:hover .owl-next,  .thankyou_swiper:hover .owl-prev{
+    opacity: 1;
+}
+.thankyou_swiper .star{
+    opacity: 0;
+    transition: all 0.2s;
+}
+.thankyou_swiper .item:hover .star {
+    opacity: 1 !important;
+}
+.thankyou_swiper .owl-nav:hover, .thankyou_swiper .owl-prev:hover{
+    background-color: darkred !important;
+}
+.thankyou_swiper .owl-nav:hover span, .thankyou_swiper .owl-prev:hover span{
+    color: white;
+}
+/* Product */
+.item_card img{
+    transition: all 0.7s;
+}
+.item_list .item_card:hover img {
+    opacity: 0.7;
+}
+/* flash_sale */
+.img_trans {
+    transition: all 0.5s;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.flash_sale_swiper .img_trans:hover {
+    transform: translateY(-30px);
+}
+.flash_sale_swiper .owl-nav.disabled {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+.flash_sale_swiper .owl-nav .owl-prev {
+    position: absolute;
+    left: 2%;
+    border: 1px solid black !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.7s;
+}
+.flash_sale_swiper .owl-nav .owl-next {
+    position: absolute;
+    right: 2%;
+    border: 1px solid black !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.7s;
+}
+.flash_sale_swiper .owl-nav .owl-prev span, .flash_sale_swiper .owl-nav .owl-next span {
+    font-size: 40px;
+    line-height: 25px;
+}
+.flash_sale_swiper:hover .owl-prev, .flash_sale_swiper:hover .owl-next {
+    opacity: 1;
+}
+.flash_sale_swiper .owl-prev:hover span{
+    color: white;
+}
+.flash_sale_swiper .owl-prev:hover {
+    background-color: rgb(173, 6, 6) !important;
+    transform: translateY(20px);
+}
+.flash_sale_swiper .owl-next:hover span{
+    color: white;
+}
+.flash_sale_swiper .owl-next:hover {
+    background-color: rgb(173, 6, 6) !important;
+    transform: translateY(20px);
+}
+/* iPhone */
+.iPhone_products button {
+    transition: all 0.7s;
+}
+.iPhone_products button:hover {
+    color: white;
+    background-color: darkred;
+    border: none
+}
+/* Banner_special */
+.banner_special .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 0;
+}
+.banner_special .owl-nav .owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.7s;
+    border: 1px solid black !important; 
+}
+.banner_special .owl-nav .owl-prev span{
+    font-size: 40px;
+    line-height: 25px;
+}
+.banner_special .owl-nav .owl-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.7s;
+    border: 1px solid black !important;
+}
+.banner_special .owl-nav .owl-next span{
+    font-size: 40px;
+    line-height: 25px;
+}
+.banner_special:hover .owl-prev, .banner_special:hover .owl-next {
+    opacity: 1;
+}
+.banner_special .owl-prev:hover, .banner_special .owl-next:hover {
+    background-color: darkred !important;
+}
+.banner_special .item {
+    transition: all 0.7s;
+}
+.banner_special .item:hover {
+    opacity: 0.8;
+}
+/* Brand_banner */
+.brand_swiper .owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.brand_swiper .owl-nav .owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.brand_swiper .owl-nav .owl-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.brand_swiper .owl-nav .owl-prev span, .brand_swiper .owl-nav .owl-next span {
+    font-size: 70px;
+    color: grey;
+    font-weight: 300;
+}
+.brand_swiper .owl-nav .owl-prev:hover, .brand_swiper .owl-nav .owl-next:hover {
+    background-color: white !important;
+}
+.brand_swiper .item img {
+    transition: all 1s;
+}
+.brand_swiper .item:hover img {
+    transform: scale(1.1);
+}
+/* vertu */
+.vertu .vertu_img img {
+    margin: 0;
+}

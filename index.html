@@ -1,0 +1,2622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Didongviet CSS -->
+    <link rel="stylesheet"
+        href="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/css/styles-l.css?v=02040520231675479507">
+    <link rel="stylesheet"
+        href="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/css/styles-l.css?v=04040520231675483552">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Owl -->
+    <link rel="stylesheet" href="./style.css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style.css/owl.theme.default.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css/index.css">
+</head>
+
+<body>
+    <div class="banner px-2 mb-1">
+        <div class="container">
+            <a href="#">
+                <img alt=""
+                    src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/h/e/header_kol-01.png">
+            </a>
+        </div>
+    </div>
+    <header class="bg-red-700 p-2.5">
+        <div class="container items-start flex flex-wrap">
+            <div class="brand mt-2 mr-44">
+                <a href="https://didongviet.vn/">
+                    <img src="https://cdn.didongviet.vn/pub/media/logo/stores/1/logo-ddv.png"
+                        title="Di Động Việt - Hệ thống bán lẻ Điện thoại, Macbook, Phụ kiện chính hãng"
+                        alt="Di Động Việt - Hệ thống bán lẻ Điện thoại, Macbook, Phụ kiện chính hãng" width="165"
+                        height="80">
+                </a>
+            </div>
+            <div class="search flex-col items-center">
+                <form class="relative">
+                    <input type="search" name="" id="" placeholder="Bạn muốn tìm gì..."
+                        class="w-96 p-2 rounded-full">
+                    <button type="submit" class="rounded-r-full bg-white p-2 absolute top-0 right-0 hover:bg-white">
+                        <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/images/search.png" alt="">
+                    </button>
+                </form>
+                <div class="flex justify-evenly my-2 px-4">
+                    <a href="https://didongviet.vn/iphone-14.html"
+                        class="text-white text-xs hover:text-gray-500 hover:underline" target="_blank">iPhone 14</a>
+                    <a href="https://didongviet.vn/samsung-galaxy-s23.html"
+                        class="text-white text-xs hover:text-gray-500 hover:underline" target="_blank">Galaxy S23
+                        Series</a>
+                    <a href="https://didongviet.vn/apple-watch-series-8.html"
+                        class="text-white text-xs hover:text-gray-500 hover:underline" target="_blank">Apple Watch 8</a>
+                    <a href="https://didongviet.vn/may-tinh-bang.html"
+                        class="text-white text-xs hover:text-gray-500 hover:underline" target="_blank">Tablet</a>
+                </div>
+            </div>
+            <div class="user flex justify-between ml-20 gap-5">
+                <div class="hotline">
+                    <a href="tel:+1800 6018" class="flex items-center pr-4 border-r-2">
+                        <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/images/phone.png" alt=""
+                            class="w-6 h-6 mr-2">
+                        <div class="text-white text-sm">
+                            <h3>Hotline hỗ trợ</h3>
+                            <h4 class="bold text-lg">1800 6018</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="https://didongviet.vn/customer/account/login/referer/aHR0cHM6Ly9kaWRvbmd2aWV0LnZuL2N1c3RvbWVyL2FjY291bnQvaW5kZXgv/"
+                        class="flex items-center pr-4 border-r-2">
+                        <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/images/profile-white.png"
+                            class="w-6 h-6 mr-2" alt="">
+                        <div class="text-white text-sm">
+                            <h3>Đăng nhập / Đăng ký</h3>
+                            <h4 class="bold text-lg">Thành Viên</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="case">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/images/minicart.png"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="Navbar p-3 shadow-lg">
+        <div class="navBar container flex items-center justify-between">
+            <div class="left">
+                <ul class="flex gap-3">
+                    <li class="relative">
+                        <a href="#" class="text-sm">
+                            <i class="fa fa fa-mobile inline-block mr-1"></i> Điện thoại
+                        </a>
+                        <div class="dropdownMenu absolute shadow-lg border gap-10 p-4 w-48 hidden">
+                            <div class="menu flex-col flex-wrap">
+                                <a href="#" class="my-2 inline-block">Apple</a>
+                                <a href="#" class="my-2 inline-block">Samsung</a>
+                                <a href="#" class="my-2 inline-block">Vertu</a>
+                                <a href="#" class="my-2 inline-block">Oppo</a>
+                                <a href="#" class="my-2 inline-block">Xiaomi</a>
+                                <a href="#" class="my-2 inline-block">Vivo</a>
+                                <a href="#" class="my-2 inline-block">Nokia</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm">
+                            <i class="fa fa fa-iphone inline-block mr-1"></i> Apple (AAR)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm">
+                            <i class="fa fa fa-mac menu-item-1-column inline-block mr-1"></i> Mac & Tablet
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm">
+                            <img src="https://didongviet.vn/assets/images/icon/icon-am-thanha.png" class="inline mr-1"
+                                alt=""> Âm Thanh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm">
+                            <i class="fa fa fa-accessories inline-block mr-1"></i> Phụ kiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm">
+                            <img src="https://didongviet.vn/assets/images/icon/icon-may-cu.png" alt=""
+                                class="inline mr-1">
+                            Thế giới máy cũ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right flex gap-2">
+                <button
+                    class="rounded-md px-3 py-2 text-xs border border-gray-400 hover:bg-red-700 hover:text-white duration-500">
+                    <i class="fa fa-installment inline-block"></i> Trả góp
+                </button>
+                <button
+                    class="rounded-md px-3 py-2 text-xs border border-gray-400 hover:bg-red-700 hover:text-white duration-500 flex">
+                    <i class="fa fa-swap block mt-1"></i>
+                    <p class="inline-block w-12">Thu cũ đổi mới</p>
+                </button>
+                <button
+                    class="rounded-md px-3 py-2 text-xs border border-gray-400 hover:bg-red-700 hover:text-white duration-500 flex">
+                    <i class="fa fa-hand-book block mt-2 mr-2"></i>
+                    <p class="inline-block w-13">Công nghệ <br> 24h</p>
+                </button>
+                <button
+                    class="rounded-md px-3 py-2 text-xs bg-red-700 text-white hover:bg-yellow-400 duration-700 hover:text-black">
+                    <p class="w-16"> Khuyến mãi Tháng 02</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="intro my-2">
+        <div class="container grid grid-flow-col grid-cols-4 gap-5">
+            <div class="intro_left col-span-1">
+                <ul class="bg-white w-44 rounded-md">
+                    <li class="bg-red-700 p-1 rounded-md">
+                        <a href="#">
+                            <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/images/xu-huong.png"
+                                alt="" class="block mx-auto p-0.5">
+                        </a>
+                    </li>
+                    <li class="p-2 border-b-2">
+                        <a href="https://didongviet.vn/samsung-galaxy-s23.html" target="_blank">
+                            <p class="text-xs bold ml-2">#1 Galaxy S23 Series</p>
+                            <h4 class="text-xs mt-1 ml-2">Đặt trước. Ưu đãi tốt</h4>
+                        </a>
+                    </li>
+                    <li class="p-2 border-b-2">
+                        <a href="https://didongviet.vn/iphone-14.html" target="_blank">
+                            <p class="text-xs bold ml-2">#2 iPhone 14 Pro Max</p>
+                            <h4 class="text-xs mt-1 ml-2">Thiết kế đẹp. Giá sốc</h4>
+                        </a>
+                    </li>
+                    <li class="p-2 border-b-2">
+                        <a href="https://didongviet.vn/iphone-13-128gb.html" target="_blank">
+                            <p class="text-xs bold ml-2">#3 iPhone 13</p>
+                            <h4 class="text-xs mt-1 ml-2">Thiết kế đẹp. Siêu tiết kiệm</h4>
+                        </a>
+                    </li>
+                    <li class="p-2 border-b-2">
+                        <a href="https://didongviet.vn/apple-watch-series-8.html" target="_blank">
+                            <p class="text-xs bold ml-2">#4 Apple Watch Series 8</p>
+                            <h4 class="text-xs mt-1 ml-2">Thiết kế đẹp. Giá sốc</h4>
+                        </a>
+                    </li>
+                    <li class="p-2 border-b-2">
+                        <a href="https://didongviet.vn/tai-nghe-bluetooth-apple-airpods-2-no-wireless-charge-vn-a.html"
+                            target="_blank">
+                            <p class="text-xs bold ml-2">#5 AirPods 2</p>
+                            <h4 class="text-xs mt-1 ml-2">Êm tai. Giá siêu sốc</h4>
+                        </a>
+                    </li>
+                    <li class="p-2 border-b-2 rounded-b-md">
+                        <a href="https://didongviet.vn/khuyen-mai/phu-kien-iphone-14" target="_blank">
+                            <p class="text-xs bold ml-2">#6 Phụ kiện iPhone 14</p>
+                            <h4 class="text-xs mt-1 ml-2">Chính hãng. Giá tốt</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="intro_center col-span-2">
+                <div class="owl-carousel owl-theme intro_swiper relative">
+                    <div class="item">
+                        <div class="item_container">
+                            <a href="#">
+                                <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/0/7/0768x371_768x371.jpg"
+                                    alt="" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_container">
+                            <a href="#">
+                                <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x371-80-4.jpg"
+                                    alt="" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_container">
+                            <a href="#">
+                                <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x371-80_6__3.jpg"
+                                    alt="" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_container">
+                            <a href="#">
+                                <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x371_177.jpg"
+                                    alt="" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_container">
+                            <a href="#">
+                                <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x371_1__46.jpg"
+                                    alt="" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_container">
+                            <a href="#">
+                                <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x371_182.jpg"
+                                    alt="" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_container">
+                            <a href="#">
+                                <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/s/2/s23_768x371.jpg"
+                                    alt="" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro_right text-center flex flex-col gap-5 justify-start items-end col-span-1">
+                <div class="item_hot">
+                    <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/images/hot-icon.png" alt=""
+                        class="inline-block">
+                    <a href="#">Khuyến mãi phụ kiện hot</a>
+                </div>
+                <div class="sale_hot">
+                    <a href="#">
+                        <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/4/8/480x248_54.jpg"
+                            alt="" class="w-64 inline-block mx-auto rounded-md">
+                    </a>
+                </div>
+                <div class="sale_hot">
+                    <a href="#">
+                        <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/4/8/480x248_55.jpg"
+                            alt="" class="w-64 inline-block mx-auto rounded-md">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thankyou my-2">
+        <div class="container grid grid-cols-5 p-1 bg-white">
+            <div class="thankyou_left col-span-1">
+                <a href="#">
+                    <img src="https://didongviet.vn/assets/images/homepage/cam-on-600-12.png" alt=""
+                        class="object-cover">
+                </a>
+            </div>
+            <div class="thankyou_right col-span-4 ml-2 w-full">
+                <div class="owl-carousel owl-theme thankyou_swiper p-2">
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/_/u/_u_c-anh-.png"
+                            alt="" class="rounded-md">
+                        <p class="absolute bottom-0 rounded-md p-1 bg-opacity-50 bg-black w-auto text-white text-sm">
+                            Tiktoker Đức Anh Phạm</p>
+                        <div class="star absolute top-0 w-full h-full z-50">
+                            <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/Magento_Cms/images/homepage/influencer/hover-star.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/_/a/_a_ng-kho_i.png"
+                            alt="" class="rounded-md">
+                        <p class="absolute bottom-0 rounded-md p-1 bg-opacity-50 bg-black w-auto text-white text-sm">
+                            Ca sĩ Anh Khôi</p>
+                        <div class="star absolute top-0 w-full h-full z-50">
+                            <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/Magento_Cms/images/homepage/influencer/hover-star.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/l/e/le_-quye_n.png"
+                            alt="" class="rounded-md">
+                        <p class="absolute bottom-0 rounded-md p-1 bg-opacity-50 bg-black w-auto text-white text-sm">
+                            Ca sĩ Lệ Quyên</p>
+                        <div class="star absolute top-0 w-full h-full z-50">
+                            <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/Magento_Cms/images/homepage/influencer/hover-star.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/n/g/nguye_n-va_n-chung.png"
+                            alt="" class="rounded-md">
+                        <p class="absolute bottom-0 rounded-md p-1 bg-opacity-50 bg-black w-auto text-white text-sm">
+                            Nhạc sĩ Nguyễn Văn Chung</p>
+                        <div class="star absolute top-0 w-full h-full z-50">
+                            <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/Magento_Cms/images/homepage/influencer/hover-star.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/g/i/giang-ho_ng-ngo_c-.png"
+                            alt="" class="rounded-md">
+                        <p class="absolute bottom-0 rounded-md p-1 bg-opacity-50 bg-black w-auto text-white text-sm">
+                            Ca sĩ Giang Hồng Ngọc</p>
+                        <div class="star absolute top-0 w-full h-full z-50">
+                            <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/Magento_Cms/images/homepage/influencer/hover-star.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product my-2">
+        <div class="item_list">
+            <div class="container grid grid-cols-11 gap-3 items-center bg-white p-2 rounded-lg">
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://cdn.didongviet.vn/pub/media/A-iPhone-13/icon-02.jpg" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">iPhone 14</span>
+                        <br>
+                        <span class="text-xs">Series VN/A</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://cdn.didongviet.vn/pub/media/wysiwyg/2023/logo-s23.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">Galaxy</span>
+                        <br>
+                        <span class="text-xs">S23 Series </span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://cdn.didongviet.vn/pub/media/dong-ho-huawei/icon-01.jpg" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">Đồng hồ giảm</span>
+                        <br>
+                        <span class="text-xs">đến 4 triệu</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/04/iPad-Pro-2020.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">iPad Pro 2021</span>
+                        <br>
+                        <span class="text-xs">giảm đến 6,1 triệu </span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/i-con/may-cu-gia-re.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">iPhone cũ</span>
+                        <br>
+                        <span class="text-xs">Giá rẻ</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/ddv/phu-kien-apple-80x80-didongviet.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">Phụ kiện</span>
+                        <br>
+                        <span class="text-xs">Apple giá từ 245k</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://cdn.didongviet.vn/pub/media/404/80x80_menu.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">PK iPhone 14</span>
+                        <br>
+                        <span class="text-xs">Series giảm đến 40%</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/04/cap-sac.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">Cáp củ sạc</span>
+                        <br>
+                        <span class="text-xs">Giảm đến 60%</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/09/enginer.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">Pin dự phòng</span>
+                        <br>
+                        <span class="text-xs">Chỉ từ 150k</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/09/case.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">Ốp lưng UAG</span>
+                        <br>
+                        <span class="text-xs">mua 1 được 3</span>
+                    </a>
+                </div>
+                <div class="item_card text-center">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/09/airpods-max.png" alt=""
+                            class="w-14 mx-auto border border-gray-300 rounded-lg p-1">
+                        <span class="text-xs">Âm thanh</span>
+                        <br>
+                        <span class="text-xs">giảm đến 63%</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product_banner my-2">
+            <div class="container">
+                <a href="#">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/l/i/line-pc_1.jpg"
+                        alt="" class="w-full">
+                </a>
+            </div>
+        </div>
+        <div class="flash_sale">
+            <div class="container">
+                <div class="flashsale_banner mt-2">
+                    <a href="#">
+                        <img src="https://didongviet.vn/pub/media/ddv/default/button_1280x109_1.png" alt="">
+                    </a>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-red-700 mt-2 relative">
+                    <div class="item p-1">
+                        <div class="wrapper border bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        1.000.000đ</span>
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//t/a/tai-nghe-true-wireless-havit-tw967-didongviet.jpg"
+                                        alt="" class="my-3 img_trans">
+                                    <p class="text-sm mx-auto my-3">Tai Nghe True Wireless HAVIT TW967 Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">290.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">490.000 <span class="underline">đ</span></p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">4.917.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng gói <span class="text-red">6 tháng </span> miễn phí Apple Music.</p>
+                                        <p>Giảm thêm <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank Evo</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper border bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md">Giảm
+                                        1.000.000đ</span>
+                                    <span class="border-orange-400 border text-red p-2 text-xs rounded-md">Trả góp
+                                        0%</span>
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//s/a/samsung-galaxy-a33-didongviet_1.jpg"
+                                        alt="" class="my-3 img_trans">
+                                    <p class="text-sm mx-auto my-3">Samsung Galaxy A33 128GB Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">5.990.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">8.490.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">1.797.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng gói <span class="text-red">6 tháng </span> miễn phí Apple Music.</p>
+                                        <p>Giảm thêm <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank Evo</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper border bg-white rounded-lg pb-8">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md">Giảm
+                                        2.500.000đ</span>
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/iphone-xs-max-64gb-mau-gold-didongviet.jpg"
+                                        alt="" class="my-3 img_trans">
+                                    <p class="text-sm mx-auto my-3">Tai Nghe True Wireless HAVIT TW967 Chính Hãng</p>
+                                    <div class="new_price flex gap-10    mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">7.990.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">10.490.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">2.397.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm <span class="text-red">500.000đ </span> khi thu cũ đổi mới</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper border bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md">Giảm
+                                        33%</span>
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//t/a/tai-nghe-apple-airpods-2-2022-didongviet.png"
+                                        alt="" class="my-3 img_trans">
+                                    <p class="text-sm mx-auto my-3">Tai Nghe True Wireless HAVIT TW967 Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">290.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">490.000 <span class="underline">đ</span></p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">4.917.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng gói <span class="text-red">6 tháng </span> miễn phí Apple Music.</p>
+                                        <p>Giảm thêm <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank Evo</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper border bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md">Giảm
+                                        3.700.000đ</span>
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/ipad-gen-9-64gb-wifi.jpg"
+                                        alt="" class="my-3 img_trans">
+                                    <p class="text-sm mx-auto my-3">Tai Nghe True Wireless HAVIT TW967 Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">7.290.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">10.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">2.187.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng gói <span class="text-red">6 tháng </span> miễn phí Apple Music.</p>
+                                        <p>Giảm thêm <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank Evo</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="iPhone">
+            <div class="container">
+                <div class="iPhone_products mt-2 flex justify-between bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">iPhone VN/A</p>
+                    <div>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">iPhone 14</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">iPhone 13</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">iPhone 12</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl"> iPhone 11</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">iPhone SE 3 2022</button>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-white relative">
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/iphone-13-pro-max-128gb-didongviet_3_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/iphone-13-pro-max-128gb-didongviet_3_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/iphone-13-pro-max-128gb-didongviet_3_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/iphone-13-pro-max-128gb-didongviet_3_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="special mt-2">
+                                        <a href="#">
+                                            <img src="https://didongviet.vn/pub/media/efw/icons/image//a/r/artboard_2_61.jpg"
+                                                alt="" class="object-contain">
+                                        </a>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_swiper mt-2">
+            <div class="container">
+                <div class="owl-theme owl-carousel banner_special relative">
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x150_2__37.jpg"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x150_201.jpg"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/d/i/dich-vu.png"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x150_157.png"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x150_166.jpg"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hot">
+            <div class="container">
+                <div class="iPhone_products mt-2 flex justify-between bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">Điện thoại nổi bật nhất </p>
+                    <div>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">iGalaxy S23 Series</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Galaxy Z Series</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Galaxy A Series</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl"> Oppo Reno8T</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Xiaomi</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Vivo</button>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-white relative">
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">
+                                        Đặt hàng trước</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//s/a/samsung-galaxy-s23-mau-den-1-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">Samsung Galaxy S23 5G 256GB Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">24.990.000 ₫ <span class="underline"></span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">7.497.000 ₫<span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Đặt trước 02.02 - 17.02: Bộ quà tặng đến <span class="text-red">10
+                                                triệu</span></p>
+                                    </div>
+                                    <button
+                                        class="block px-9 w-full py-3 text-md bg-red-800 text-white rounded-3xl duration-300">Đăng
+                                        ký ngay</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Đặt
+                                        hàng trước</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//s/a/samsung-galaxy-s23-mau-tim-1-didongviet_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">Samsung Galaxy S23 Plus 5G 256GB Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">26.990.000<span class="underline">đ</span></p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">8.097.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Đặt trước 02.02 - 17.02: Bộ quà tặng đến <span class="text-red">10
+                                                triệu</span></p>
+                                    </div>
+                                    <button
+                                        class="block px-9 w-full py-3 text-md bg-red-800 text-white rounded-3xl duration-300">Đăng
+                                        ký ngay</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Đặt
+                                        hàng trước</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//s/a/samsung-galaxy-s23-ultra-5g-mau-xanh.png"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">Samsung Galaxy S23 Ultra 5G 256GB Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">31.990.000 <span class="underline">đ</span></p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">9.5.970.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Đặt trước 02.02 - 17.02: Bộ quà tặng đến <span class="text-red">10
+                                                triệu</span></p>
+                                    </div>
+                                    <button
+                                        class="block px-9 w-full py-3 text-md bg-red-800 text-white rounded-3xl duration-300">Đăng
+                                        ký ngay</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//o/p/oppo-reno8-t-5g-didongviet_2.png"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">OPPO Reno8 T 5G 128GB Chính Hãng</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">9.990.000 <span class="underline">đ</span></p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">2.997.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="block px-9 w-full py-3 text-md bg-red-800 text-white rounded-3xl duration-300 mt-2">Đăng
+                                        ký ngay</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand_banner">
+            <div class="container">
+                <div
+                    class="brand mt-2 flex justify-between bg-red-800 p-3 items-center text-white text-lg bold relative">
+                    <p class="">Chuyên trang thương hiệu</p>
+                </div>
+                <div class="brand_swiper owl-carousel owl-theme px-4 py-2 bg-white">
+                    <div class="item p-2">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/a/r/artboard_1_23.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="item p-2">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/3/0/301x151.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="item p-2">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/a/r/artboard_19.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="item p-2">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/a/r/artboard_1_copy_2.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="item p-2">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/g/e/gear5.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="item p-2">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/a/r/artboard_10.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tablet">
+            <div class="container">
+                <div class="iPhone_products mt-2 flex justify-between bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">MacBook | iMac & Tablet</p>
+                    <div>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Macbook Pro M1</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Macbook Air M1</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">iMac</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl"> iPad Gen 9</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Galaxy Tab</button>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-white relative">
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/ipad-pro-11-inch-m2-128gb-wifi-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/ipad-pro-2021-11inch-m1-128gb-wifi.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//g/a/galaxy-tab-8-2022-didongviet_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//i/p/iphone-13-pro-max-128gb-didongviet_3_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_swiper_2 mt-2">
+            <div class="container">
+                <div class="owl-theme owl-carousel banner_special relative">
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/w/a/watch5_1.jpg"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x150-80_83.jpg"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x150_2__33.jpg"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x150-80_61.jpg"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/f/r/freebuds_5i_768x150.png"
+                                alt="" class="rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="apple_access">
+            <div class="container">
+                <div class="iPhone_products mt-2 flex justify-between bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">Phụ kiện Apple chính hãng</p>
+                    <div>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Apple AirPods</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Apple AirTag</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Magic Mouse</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Củ sạc Apple 20W</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Đế sạc MagSafe</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Óp lưng chính hãng</button>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-white relative">
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//a/p/apple-airtag.png"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//t/a/tai-nghe-bluetooth-apple-airpods-max.png"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//a/p/apple-airpods-pro-2021-didongviet.png"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//c/h/chuot-khong-day-apple-magic-mouse-2-2021.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="smart_swatch">
+            <div class="container">
+                <div class="iPhone_products mt-2 flex justify-between bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">Đồng hồ thông minh</p>
+                    <div>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Apple Watch</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Đồng hồ Huawei</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Galaxy Watch 5</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Đồng hồ Xiaomi</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Đồng hồ Garmin</button>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-white relative">
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//a/p/apple-watch-series-8-45mm-gps-vien-nhom-day-cao-su-didongviet_1_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//a/p/apple-watch-nike-series-7-41mm-4g-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//a/p/apple-watch-ultra-49mm-lte-alpine-loop-size-nho-didongviet.png"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//v/o/vong-deo-tay-thong-minh-huawei-band-7-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sound">
+            <div class="container">
+                <div class="iPhone_products mt-2 flex justify-between bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">Âm Thanh</p>
+                    <div>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">JBL</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Marshall</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Sony</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">LG</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Sennheiser</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Soundpeats</button>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-white relative">
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//l/o/loa-bluetooth-marshall-stanmore-2-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//l/o/loa-bluetooth-sony-srs-xe200-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//t/a/tai-nghe-khong-day-jbl-tune-230nc-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//l/o/loa-bluetooth-jbl-partybox-encore-essential-didongviet.png"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="smart">
+            <div class="container">
+                <div class="iPhone_products mt-2 flex justify-between bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">Nhà Thông Minh</p>
+                    <div>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Máy hút bụi</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Máy lọc không khí</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Camera</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Đồng hồ Xiaomi</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Router</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Cân sức khỏe</button>
+                        <button class="py-2 px-3 mx-1 text-sm bg-white rounded-3xl">Gia dụng thông minh</button>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme flash_sale_swiper p-2 bg-white relative">
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//m/a/may-loc-khong-khi-xiaomi-smart-purifier-4-pro-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//r/o/robot-hut-bui-xiaomi-vacuum-mop-2-pro-didongviet_1.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//m/a/may-chieu-mini-samsung-the-freestyle-sp-lsp3-pos2-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="wrapper bg-white rounded-lg">
+                            <div class="inside m-3">
+                                <a href="#">
+                                    <span class="inline-block bg-red-700 text-white p-2 text-xs rounded-md z-20">Giảm
+                                        5.200.000đ</span>
+                                    <div>
+                                        <img src="https://cdn.didongviet.vn/pub/media/catalog/product//r/o/robot-hut-bui-xiaomi-vacuum-mop-2-lite-didongviet.jpg"
+                                            alt="" class="my-3 img_trans">
+                                    </div>
+                                    <p class="text-sm mx-auto my-3">iPhone 14 Pro Max 256GB Chính hãng (VN/A)</p>
+                                    <div class="new_price flex gap-5 mt-2">
+                                        <div class="new_price_left">
+                                            <p class="text-sm text-red">22.790.000 <span class="underline">đ</span></p>
+                                            <p class="text-xs line-through">27.990.000 <span class="underline">đ</span>
+                                            </p>
+                                        </div>
+                                        <div class="new_price_right text-right">
+                                            <p class="text-sm">Hoặc trả trước</p>
+                                            <p class="text-xs bold">11.395.000 <span class="underline">đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="offer text-xs my-2 bg-gray-200 p-2">
+                                        <p>Tặng thêm đến <span class="text-red">1 triệu</span> khi Thu cũ đổi</p>
+                                        <p>mới. Giảm đến <span class="text-red">800.000đ khi mở thẻ </span> </p>
+                                        <p>TPBank</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery">
+            <div class="container">
+                <div class="iPhone_products mt-2  bg-red-800 p-3 items-center">
+                    <p class="text-lg text-white bold ">Phụ kiện xịn - Giao tận nơi</p>
+                </div>
+                <div class="delivery_list grid grid-cols-11 p-3 text-center bg-white">
+                    <a href="#" class="text-xs">
+                        <p>Phụ kiện</p>
+                        <p>Apple</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Phụ kiện</p>
+                        <p>Samsung</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Pin sạc</p>
+                        <p>dự phòng</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Dây</p>
+                        <p>Cáp sạc</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Adapter</p>
+                        <p>củ sạc</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Tai nghe</p>
+                        <p>Bluetooth</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Loa</p>
+                        <p>Bluetooth</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Ốp lưng</p>
+                        <p>bao da</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Kính</p>
+                        <p>cường lực</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Đồ chơi</p>
+                        <p>công nghệ</p>
+                    </a>
+                    <a href="#" class="text-xs">
+                        <p>Thương hiệu</p>
+                        <p>nổi bật</p>
+                    </a>
+                </div>
+                <div class="delivery_card bg-red-800 p-2">
+                    <div class="delivery_card_row grid grid-cols-5 gap-3">
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//l/o/loa-jbl-charge-4-mau-do-chinh-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Loa Bluetooth</p>
+                                    <p class="text-sm">JBL Charge 4</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">2.790.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">3.490.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//l/o/loa-bluetooth-havit-sk838bt-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Loa Bluetooth</p>
+                                    <p class="text-sm">Havit SK838BT</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">290.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">490.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//t/a/tai-nghe-khong-day-jbl-live-pro-2-tws-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Tai nghe không</p>
+                                    <p class="text-sm">dây JBL Live Pro</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">3.790.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//t/a/tai-nghe-khong-day-samsung-galaxy-buds-2-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Galaxy Buds 2</p>
+                                    <p class="invisible">JBL Charge 4</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">2.990.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">2.990.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//l/o/loa-bluetooth-sony-srs-xe200-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Loa Bluetooth</p>
+                                    <p class="text-sm">Sony SRS-XE200</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">2.290.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">2.950.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="delivery_card_row grid grid-cols-5 gap-3 my-2">
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//o/p/op-lung-iphone-13-pro-max-crystal-palace-snap-didongviet-2.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Ốp lưng iPhone</p>
+                                    <p class="text-sm">13 Pro Max</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">840.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">1.200.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//a/d/adapter-cu-sac-nhanh-samsung-25w-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Củ sạc nhanh</p>
+                                    <p class="text-sm">Samsung 25W</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">490.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">490.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//d/a/day-ca-sac-innostyle-usb-c-to-lighning-den-didongviet_1_1_1.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Cáp sạc</p>
+                                    <p class="text-sm">Innostyle Jazzy</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">290.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">400.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//p/i/pin-sac-du-phong-energizer-20000mah-3-7v-li-polymer-ue-20010-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Pin sạc dự</p>
+                                    <p class="invisible">phòng Energizer</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">550.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">850.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card_item bg-white rounded-lg">
+                            <a class="wrapper flex p-1 gap-2 cursor-pointer">
+                                <div class="card_img w-1/2">
+                                    <img src="https://cdn.didongviet.vn/pub/media/catalog/product//b/o/bo-combo-cap-sac-innostyle-20w-type-c-to-lightning-didongviet.jpg"
+                                        alt="" class="object-cover">
+                                </div>
+                                <div class="card_info">
+                                    <p class="text-sm">Bộ combo cáp</p>
+                                    <p class="text-sm">sạc Innostyle</p>
+                                    <div class="card_price mt-4">
+                                        <p class="text-red text-sm">650.000 <span class="underline text-red">đ</span>
+                                        </p>
+                                        <p class="line-through text-xs">950.000 <span class="underline">đ</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="block py-2 px-3 mx-auto border border-gray-500 text-white hover:bg-red-800 my-2">Xem
+                        thêm <i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="activity">
+        <div class="container grid grid-cols-5 p-1">
+            <div class="activity_left col-span-1">
+                <a href="#">
+                    <img src="https://didongviet.vn/statics/images/ddv-dong-hanh-chia-se.jpg" alt=""
+                        class="object-cover p-2">
+                </a>
+            </div>
+            <div class="acitivity_right col-span-4 ml-2 w-full">
+                <div class="owl-carousel owl-theme activity_swiper p-2">
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/404/03.png" alt="" class="rounded-md">
+                    </div>
+                    <div class="item relative">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/2020/hinh-slide-page-iphone-13-didongviet-7.jpg"
+                            alt="" class="rounded-md">
+                    </div>
+                    <div class="item relative">
+                        <img src="https://didongviet.vn/pub/media/wysiwyg/2020/hinh-slide-page-iphone-13-didongviet-2.jpg"
+                            alt="" class="rounded-md">
+                    </div>
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/404/Sach_2.png" alt="" class="rounded-md">
+                    </div>
+                    <div class="item relative">
+                        <img src="https://cdn.didongviet.vn/pub/media/404/Sach.png" alt="" class="rounded-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newspaper mt-2">
+        <div class="container">
+            <div class="wrapper grid grid-cols-6 bg-white py-3 px-4 gap-3 items-center">
+                <div class="newspaper_brand">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/2/4/24h_1.png"
+                        alt="" class="mx-auto">
+                </div>
+                <div class="newspaper_brand">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/n/g/nghenhin_1.png"
+                        alt="" class="mx-auto">
+                </div>
+                <div class="newspaper_brand">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/s/a/saigon_2.png"
+                        alt="" class="mx-auto">
+                </div>
+                <div class="newspaper_brand">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/t/h/thanhnien_2.png"
+                        alt="" class="mx-auto">
+                </div>
+                <div class="newspaper_brand">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/t/h/thegioiso_1.png"
+                        alt="" class="mx-auto">
+                </div>
+                <div class="newspaper_brand">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/v/n/vnexpress_1.png"
+                        alt="" class="mx-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="store mt-3">
+        <div class="container">
+            <div class="wrapper grid grid-cols-2 gap-3">
+                <div class="main_store col-span-1 row-span-2">
+                    <div class="wrapper p-3 bg-white rounded-lg">
+                        <a href="#">
+                            <h1 class=" border-b border-b-gray-300 py-3 text-lg bold">Hệ thống 56 cửa hàng Di Động
+                                Việt</h1>
+                        </a>
+                        <p class="text-xs text-gray-500 my-3">Nơi có tất cả các sản phẩm Di Động Việt đang kinh doanh và
+                            là nơi Trade-in Thu cũ lên đời.
+                            Đặc biệt: Máy qua sử dụng giá rẻ, Trả góp linh hoạt với nhiều phương thức</p>
+                        <ul class="text-xs px-3">
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span> 45 Nguyễn Trung Trực, Rạch Giá , Kiên Giang</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span> 132 Nguyễn Hữu Thọ, Bến Lức, Long An</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>574 Cách Mạng Tháng 8, Tây Ninh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>60 Hàm Nghi, Thanh Khê, Đà Nẵng</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>417 Đại Lộ Bình Dương, Thủ Dầu Một, Bình Dương</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>13-15-17 Đường D1, Kp.4, P. Mỹ Phước, Bến Cát, Bình Dương</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>39/1-40/1A Đường 22/12, P. An Phú, Thuận An, Bình Dương</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>1110 Phú Riềng Đỏ, Đồng Xoài, Bình Phước</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>177 Lê Hồng Phong, Vũng Tàu</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>161 Trần Hưng Đạo,Phan Thiết, Bình Thuận</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>316 Hùng Vương, Kp.3, Xuân Bình, Long Khánh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>91,92,93/2, KP. 8A, Tân Biên, Biên Hòa</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>515 Nguyễn Duy Trinh, Bình Trưng Đông, Thủ Đức</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>967 Kha Vạn Cân, Linh Chiểu, Thủ Đức</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>237 Khánh Hội , P.5 , Quận 4, Hồ Chí Minh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>1270 Quang Trung, P. 14, Quận Gò Vấp, Hồ Chí Minh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>04 Nguyễn Ảnh Thủ, P. Hiệp Thành, Quận 12, Hồ Chí Minh</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="apple_main_store">
+                    <div class="wrapper p-3  bg-white rounded-lg">
+                        <a href="#">
+                            <h1 class=" border-b border-b-gray-300 py-3 text-lg bold">Hệ thống 10 cửa hàng Di Động
+                                Việt đạt chuẩn PPG của Apple</h1>
+                        </a>
+                        <p class="text-xs text-gray-500 my-3">Di Động Việt tự hào với hệ thống 10 cửa hàng đạt chuẩn
+                            PPG, có mặt chính thức trên website
+                            của Apple.com (locate.apple.com/vn/en/sales)</p>
+                        <ul class="text-xs list-disc px-3">
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>77 Trần Quang Khải, P. Tân Định, Quận 1, Tp. Hồ Chí Minh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>79 Đồng Khởi, P. Bến Nghé, Quận 1, Tp. Hồ Chí Minh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>745A Đường 3/2, Phường 6, Quận 10, Tp. Hồ Chí Minh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>619 Nguyễn Thị Thập, P. Tân Hưng, Quận 7, Tp. Hồ Chí Minh</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>621 Âu Cơ, P. Phú Thuận, Quận Tân Phú, Tp. Hồ Chí Minh</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile_phone_main">
+                    <div class="wrapper p-3  bg-white rounded-lg">
+                        <a href="#">
+                            <h1 class=" border-b border-b-gray-300 py-3 text-lg bold">Hệ thống 05 cửa hàng SiS
+                                Mobilephone - Di Động Việt</h1>
+                        </a>
+                        <p class="text-xs text-gray-500 my-3">Hệ thống liên kết theo mô hình Shop in Shop (SiS)
+                            giữa Mobifone và Di Động Việt. Nơi
+                            chỉ bán điện thoại Samsung, Oppo, Vsmart, Xiaomi với giá rẻ nhất thị trường.</p>
+                        <ul class="text-xs list-disc px-3">
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>80 Nguyễn Du, P. Bến Nghé, Quận 1, TP.HCM</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>291A Tô Hiến Thành, P. 13, Quận 10, TP.HCM</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>122A Phan Đăng Lưu, Phường 3, Quận Phú Nhuận, TP.HCM</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>254 Lê Văn Việt, P. Tăng Nhơn Phú A, Quận 9, TP.HCM</span>
+                            </li>
+                            <li class="my-2 hover:text-red-700 list-disc">
+                                <span>365 Cộng Hòa, P. 13, Quận Tân Bình, TP.HCM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="vertu my-2">
+                <div class="wrapper flex bg-white py-3 px-4 items-center gap-2 rounded-lg">
+                    <div class="vertu_img">
+                        <img src="https://cdn.didongviet.vn/pub/media/ddv/trang-chu/logo-didongviet-_-vertu.png" alt="">
+                    </div>
+                    <div class="vertu_info text-sm">
+                        <p>Là nhà phân phối - bán lẻ Vertu chính hãng ĐỘC QUYỀN tại Việt Nam, Di Động Việt đem đến những
+                            sản phẩm thời thượng, trải nghiệm mua sắm đẳng cấp xứng tầm phong cách sống thượng lưu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="apple_resale">
+                <div class="wrapper flex bg-white items-center py-3 px-4 gap-2 rounded-lg">
+                    <div class="apple_img w-64">
+                        <img src="https://didongviet.vn/pub/media/ddv/trang-chu/ddv-apple-chinh-thuc.png" alt="">
+                    </div>
+                    <div class="apple_info text-sm">
+                        <p>Là đại lý ủy quyền chính thức của Apple tại Việt Nam (Apple Authorized Reseller) từ tháng
+                            11/2020, Di Động Việt đem đến cho quý khách hàng những trải nghiệm tuyệt vời khi mua sắm các
+                            sản phẩm, dịch vụ của Apple với chất lượng tốt nhất cùng thái độ phục vụ đúng chuẩn AAR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="distribute my-3">
+        <div class="container">
+            <div class="wrapper grid grid-cols-3 p-2 gap-5">
+                <div class="distribute_left col-span-2 bg-white rounded-md">
+                    <div class="wrapper flex p-4 gap-56">
+                        <div class="col_left">
+                            <ul>
+                                <li class="mb-3">
+                                    <a href="#">Mua hàng từ xa</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Mua hàng trả góp</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Chính sách bảo hành</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Chính sách đổi trả</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Chính sách bán hàng</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Chính sách bảo mật</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Chính sách sử dụng</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Chính sách kiểm hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col_right border-l pl-4">
+                            <ul>
+                                <li class="mb-3">
+                                    <a href="#">Hệ thống cửa hàng</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Khuyến mãi trong tháng</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Công nghệ 24h</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Trade-in thu cũ lên đời</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Tra cứu điểm thành viên</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Tuyển dụng mới nhất</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="#">Hướng dẫn mua hàng từ xa</a>
+                                </li>
+                                <li class="mt-3">
+                                    <a href="#">Trung tâm bảo hành Apple tại Việt Nam</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="distribute_right ">
+                    <div class="wrapper p-3 bg-white rounded-md">
+                        <img src="https://didongviet.vn/pub/static/frontend/ddv/default/vi_VN/images/support.png" alt=""
+                            class="inline-block"> <span class="bold text-xl ml-2">Hỗ trợ</span>
+                        <div class="support flex justify-between items-center p-2 border-b">
+                            <div class="support_info">
+                                <p>Gọi tư vấn máy - phụ kiện</p>
+                                <span class="text-gray-500">(8:00 - 21:30)</span>
+                            </div>
+                            <div class="number">
+                                <span class="bold text-xl">1800.6018</span>
+                            </div>
+                        </div>
+                        <div class="support flex justify-between items-center p-2 border-b">
+                            <div class="support_info">
+                                <p>Khiếu nại - góp ý</p>
+                                <span class="text-gray-500">(8:00 - 21:30)</span>
+                            </div>
+                            <div class="number">
+                                <span class="bold text-xl">1800.6306</span>
+                            </div>
+                        </div>
+                        <div class="support flex justify-between items-center p-2 border-b">
+                            <div class="support_info">
+                                <p>Bảo hành - Hỗ trợ kỹ thuật</p>
+                                <span class="text-gray-500">(9:00 - 21:30)</span>
+                            </div>
+                            <div class="number">
+                                <span class="bold text-xl">1800.6729</span>
+                            </div>
+                        </div>
+                        <div class="support flex justify-between items-center p-2">
+                            <div class="support_info">
+                                <p>Gọi mua hàng từ xa</p>
+                                <span class="text-gray-500">(8:00 - 21:30)</span>
+                            </div>
+                            <div class="number">
+                                <span class="bold text-xl">1800.6018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="connect">
+        <div class="container flex gap-20 bg-white px-2 py-4">
+            <div class="connect_left flex items-center gap-5 px-1">
+                <span class="text-lg bold"><i class="fa fa-swap"></i> Kết nối Di Động Việt</span>
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+            <div class="connect_right flex items-center border-l px-3 gap-3">
+                <span class="text-lg bold"><i class="fa fa-credit-card"></i> Hỗ trợ thanh toán</span>
+                <img src="https://didongviet.vn/statics/images/logo-payment.png" alt="" class="w-96">
+                <a href="#" class="w-20">
+                    <img src="https://didongviet.vn/statics/images/handle_cert.png" alt="">
+                </a>
+                <a href="#" class="w-28">
+                    <img src="https://didongviet.vn/statics/images/dmca_protected_16_120.png" alt="">
+                </a>
+                <a href="#" class="w-28">
+                    <img src="https://didongviet.vn/statics/images/bo-cong-thuong.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container grid grid-cols-5 py-3 border-b">
+            <div class="footer_col">
+                <div class="wrapper">
+                    <h1 class="text-sm bold">Sản phẩm bán chạy</h1>
+                    <ul>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPhone 14 Pro Max
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPhone 13 Pro Max
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Samsung S22 Ultra
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Samsung Galaxy Z Fold4
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Samsung Galaxy Z Flip4
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Oppo Reno8
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Macbook Air M2
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                AirPods Pro 2021
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Đồng hồ Garmin
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_col">
+                <div class="wrapper">
+                    <h1 class="text-sm bold">Điện thoại</h1>
+                    <ul>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPhone 14 VN/A series
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPhone 13 VN/A series
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPhone 12 VN/A series
+
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPhone 11 VN/A series
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPhone Cũ
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Samsung
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Nokia
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Oppo
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Xiaomi
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Điện thoại gập
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Điện thoại cũ
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_col">
+                <div class="wrapper">
+                    <h1 class="text-sm bold">Đồng hồ thông minh</h1>
+                    <ul>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Apple Watch
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Samsung Galaxy Watch
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Xiaomi Mi Band
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Vòng đeo tay
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Đồng hồ định vị trẻ em
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Đồng hồ Cũ
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Apple Watch cũ
+                            </a></li>
+                    </ul>
+                    <h1 class="text-sm bold mt-2">Máy tính bảng</h1>
+                    <ul>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPad
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                iPad Air 5
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Galaxy Tab
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Xiaomi Pad
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_col">
+                <div class="wrapper">
+                    <h1 class="text-sm bold">Phụ kiện</h1>
+                    <ul>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Phụ kiện MacBook/Laptop
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Ốp lưng, bao da
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Kính cường lực
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Củ sạc
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Cáp sạc
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Sạc dự phòng
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Tai nghe
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Loa nghe nhạc
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Thiết bị y tế
+                            </a></li>
+                        <li><a href="#" class="text-xs text-gray-500 hover:underline hover:text-gray-500">
+                                Smarthome
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_col">
+                <div class="wrapper">
+                    <h1 class="text-sm bold">Đối tác Sửa chữa Điện thoại - Laptop và Bảo hành Ủy quyền
+                    </h1>
+                    <a href="#" class="inline-block my-2">
+                        <img src="https://cdn.didongviet.vn/pub/media/giao-dien/VDD_logo-01.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn.didongviet.vn/pub/media/giao-dien/logo-tgmc.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container text-center p-4">
+                <p class="text-xs">CÔNG TY TNHH CÔNG NGHỆ DI ĐỘNG VIỆT - 75/35 Nguyễn Cửu Vân, Phường 17, Quận Bình
+                    Thạnh, TP Hồ Chí Minh.</p>
+                <p class="text-xs">Mã số doanh nghiệp: 0312193244, ngày cấp: 05/03/2021, nơi cấp: Sở kế hoạch và đầu tư
+                    thành phố Hồ Chí Minh</p>
+                <p class="text-xs">MST:0312193244.</p>
+                <p class="text-xs">Chủ sở hữu: Nguyễn Ngọc Đạt - Điện thoại: 1800.6018 (miễn phí) - Email:
+                    lienhe@didongviet.vn - Bản quyền thuộc về Di Động Việt.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Owl -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.intro_swiper').owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        }),
+            $('.thankyou_swiper').owlCarousel({
+                loop: true,
+                nav: true,
+                dots: false,
+                margin: 10,
+                center: true,
+                responsive: {
+                    0: {
+                        items: 4
+                    }
+                }
+            }),
+            $('.flash_sale_swiper').owlCarousel({
+                loop: true,
+                nav: true,
+                dots: false,
+                margin: 5,
+                responsive: {
+                    0: {
+                        items: 5
+                    }
+                }
+            }),
+            $('.banner_special').owlCarousel({
+                loop: false,
+                nav: true,
+                dots: false,
+                margin: 5,
+                responsive: {
+                    0: {
+                        items: 2
+                    }
+                }
+            }),
+            $('.brand_swiper').owlCarousel({
+                loop: true,
+                nav: true,
+                dots: false,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 4
+                    }
+                }
+            }),
+            $('.activity_swiper').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: false,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 4
+                    }
+                }
+            })
+    </script>
+</body>
+
+</html>
